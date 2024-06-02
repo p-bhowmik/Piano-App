@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    
+    display: flex;
+    background-color: #e4ebf3;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+
+.container{
+    background-color: rgb(18 19 19);
+    width: 700px;
+    border-radius: 20px;
+    padding: 30px 40px;
+    
+}
+
+
+
+ .container header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h2{
+    color: #848181;
+}
+.volume-range input{
+    accent-color: #faf6d8;
+}
+header span{
+    font-size: 1.2rem;
+    margin-right: 8px;
+    color: #848181;
+}
+.piano-keys{
+    display: flex;
+    margin-top: 28px;
+}
+.piano-keys .key{
+    list-style: none;
+    cursor: pointer;
+}
+
+.piano-keys .white{
+    height: 230px;
+    width: 136px;
+    border-radius: 7px;
+    /* z-index: 2; */
+    border: 1px solid #000;
+    background-color: rgb(251, 247, 247);
+}
+
+.piano-keys .white:active{
+    background-color: rgb(235, 230, 230);
+}
+.piano-keys .white:hover{
+    background-color: rgb(235, 230, 230);
+}
+
+.piano-keys .black{
+    width: 44px;
+    height: 140px;
+    background-color: rgb(13, 12, 12);
+    z-index: 2;
+    border-radius: 0 0 5px 5px;
+    margin: 0 -22px 0 -22px;
+}
+
+.piano-keys .black:active{
+    background-color: rgb(57, 58, 57);
+}
+.piano-keys .black:hover{
+    background-color: rgb(57, 58, 57);
+}
